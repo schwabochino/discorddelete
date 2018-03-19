@@ -12,7 +12,7 @@ print """
 print "--- 11's discord deleter thing ---"
 print "clears all of your messages in a channel"
 print "in order for this script to work properly the channel id, auth token, and username is required"
-sys.setrecursionlimit(100000) #Default is 1000. If you have to delete in old and long channels use 10.000 oder 100.000
+sys.setrecursionlimit(100000) #Default is 1000. If you have to delete in old and long channels use 10.000 or 100.000
 username = raw_input("username: ")
 auth_token = raw_input("auth token: ")
 channel_id = raw_input("channel id: ")
