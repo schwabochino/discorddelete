@@ -14,8 +14,8 @@ print "clears all of your messages in a channel"
 print "in order for this script to work properly the channel id, auth token, and username is required"
 sys.setrecursionlimit(100000) #Default is 1000. If you have to delete in old and long channels use 10.000 or 100.000
 username = raw_input("username: ")
+channel_id = raw_input("channel_id: ")
 auth_token = raw_input("auth token: ")
-channel_id = raw_input("channel id: ")
 delete_from_all_users = True if raw_input("delete messages from other users (y/n): ") == "y" else False
 
 def get_all_messages(auth, id, last="", prev=[]): # recursively find all messages in a channel, 100 at a time
